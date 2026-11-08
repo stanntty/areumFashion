@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Timeless fashion made to fit you. Discover the Areum Fashion collection."
+    />
+    <title>Areum Fashion | Timeless Style</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="#home" class="logo">Areum<span>Fashion</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#collection" class="explore-btn">Explore</a>
+          <button
+            class="cart-tr
+            igger"
+            id="cartToggle"
+            aria-label="Shopping Cart"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cartCount">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Landmarks -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="sub-tag">Autumn / Winter 2026</span>
+            <h1>Timeless Fashion Made to Fit You</h1>
+            <p>
+              Discover handcrafted apparel designed with elegance, precision,
+              and modern sustainability in mind.
+            </p>
+            <div class="hero-actions">
+              <a href="#collection" class="btn shop-btn">Shop Collection</a>
+              <a href="#about" class="btn story-btn">Read Our Story</a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
+              alt="Model wearing Areum Fashion apparel"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80"
+              alt="Areum Fashion founders crafting apparel in workshop"
+            />
+          </div>
+
+          <div class="about-text">
+            <span class="sub-tag">Est. 2014</span>
+            <h2>Our Story</h2>
+            <p>
+              The dream kicked off 12 years ago. We started with just 5 dresses
+              on display at our small stall and two people with a passion for
+              making people's day beautiful. But now, we are a leading fashion
+              boutique enterprise known all throughout Korea and the world at
+              large.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collection Section -->
+      <section id="collection" class="collection">
+        <div class="collection-header">
+          <span class="sub-tag">Seasonal Selection</span>
+          <h2 class="collection-heading">The Autumn Collection</h2>
+          <div class="collection-caption">
+            <p>
+              Let's look at some of our fashionable dresses that are popular
+              this week. Stay cozy and stylish with rich autumnal tones, soft
+              premium fabrics, and versatile silhouettes designed to take you
+              seamlessly from crisp daytime outings to elegant evening
+              gatherings.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                alt="Silk Sunset Maxi Dress"
+              />
+              <span class="badge">Bestseller</span>
+            </div>
+            <div class="card-content">
+              <h3>Silk Sunset Maxi Dress</h3>
+              <p class="card-desc">
+                Fluid Mulberry silk maxi with open back backline and cinched
+                waist.
+              </p>
+              <div class="product-info">
+                <span class="colors">Amber, Plum, Onyx</span>
+                <span class="price">$128</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Silk Sunset Maxi Dress', 128)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80"
+                alt="Tailored Wool Trench Coat"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Tailored Wool Trench Coat</h3>
+              <p class="card-desc">
+                Double-breasted Italian wool blend coat with structured shoulder
+                detail.
+              </p>
+              <div class="product-info">
+                <span class="colors">Camel, Espresso</span>
+                <span class="price">$245</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Tailored Wool Trench Coat', 245)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
+                alt="Pleated Midi Velvet Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Pleated Midi Velvet Dress</h3>
+              <p class="card-desc">
+                Luxurious pleated velvet with balloon sleeves and ribbon tie
+                belt.
+              </p>
+              <div class="product-info">
+                <span class="colors">Emerald, Burgundy</span>
+                <span class="price">$165</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Pleated Midi Velvet Dress', 165)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+                alt="Cashmere Turtleneck Ensemble"
+              />
+              <span class="badge">New Arrival</span>
+            </div>
+            <div class="card-content">
+              <h3>Cashmere Turtleneck Ensemble</h3>
+              <p class="card-desc">
+                Ultra-soft 100% Mongolian cashmere knit paired with wool
+                trousers.
+              </p>
+              <div class="product-info">
+                <span class="colors">Oatmeal, Slate Gray</span>
+                <span class="price">$198</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Cashmere Turtleneck Ensemble', 198)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80"
+                alt="Minimalist Satin Slip Gown"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Minimalist Satin Slip Gown</h3>
+              <p class="card-desc">
+                Bias-cut satin gown delivering effortless movement and luster.
+              </p>
+              <div class="product-info">
+                <span class="colors">Champagne, Black</span>
+                <span class="price">$140</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Minimalist Satin Slip Gown', 140)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&w=800&q=80"
+                alt="Autumn Floral Wrap Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Autumn Floral Wrap Dress</h3>
+              <p class="card-desc">
+                Botanical print wrap dress in breathable viscose with ruffle
+                hem.
+              </p>
+              <div class="product-info">
+                <span class="colors">Terracotta, Forest Green</span>
+                <span class="price">$115</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Autumn Floral Wrap Dress', 115)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
+                alt="Structure Tweed Blazer Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Structure Tweed Blazer Dress</h3>
+              <p class="card-desc">
+                Modern sharp tailoring in houndstooth tweed with gold hardware
+                buttons.
+              </p>
+              <div class="product-info">
+                <span class="colors">Ivory / Black Tweed</span>
+                <span class="price">$210</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Structure Tweed Blazer Dress', 210)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+                alt="Urban Leather Trench Jacket"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Urban Leather Trench Jacket</h3>
+              <p class="card-desc">
+                Supple vegan leather trench jacket with cinched belt waist.
+              </p>
+              <div class="product-info">
+                <span class="colors">Rich Cognac, Onyx</span>
+                <span class="price">$260</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Urban Leather Trench Jacket', 260)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80"
+                alt="Ribbed Knit Bodycon Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Ribbed Knit Bodycon Dress</h3>
+              <p class="card-desc">
+                Sculpting merino wool knit dress with mock-neck sweater
+                silhouette.
+              </p>
+              <div class="product-info">
+                <span class="colors">Rust, Midnight Blue</span>
+                <span class="price">$135</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Ribbed Knit Bodycon Dress', 135)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=800&q=80"
+                alt="Contemporary Layered Shirt Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Contemporary Layered Shirt Dress</h3>
+              <p class="card-desc">
+                Poplin cotton shirt dress integrated with a removable knit vest.
+              </p>
+              <div class="product-info">
+                <span class="colors">Crisp White / Heather</span>
+                <span class="price">$150</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Contemporary Layered Shirt Dress', 150)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80"
+                alt="Draped Asymmetric Evening Gown"
+              />
+              <span class="badge">Limited</span>
+            </div>
+            <div class="card-content">
+              <h3>Draped Asymmetric Gown</h3>
+              <p class="card-desc">
+                Architectural single-shoulder neckline in flowing heavy crepe
+                satin.
+              </p>
+              <div class="product-info">
+                <span class="colors">Wine Red, Midnight Black</span>
+                <span class="price">$280</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Draped Asymmetric Gown', 280)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80"
+                alt="Chiffon Layered Midi Skirt Suit"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Chiffon Layered Midi Suit</h3>
+              <p class="card-desc">
+                Lightweight tiered chiffon midi ensemble paired with a refined
+                cardigan.
+              </p>
+              <div class="product-info">
+                <span class="colors">Dusty Rose, Mocha</span>
+                <span class="price">$175</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Chiffon Layered Midi Suit', 175)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 13 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=800&q=80"
+                alt="Oversized Knit Sweater Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Oversized Knit Sweater Dress</h3>
+              <p class="card-desc">
+                Chunky Cable-knit dress designed for ultimate warmth and cozy
+                comfort.
+              </p>
+              <div class="product-info">
+                <span class="colors">Cream, Warm Taupe</span>
+                <span class="price">$120</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Oversized Knit Sweater Dress', 120)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 14 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=800&q=80"
+                alt="Satin High-Neck Evening Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Satin High-Neck Dress</h3>
+              <p class="card-desc">
+                Elegantly tailored high-neck silhouette featuring a subtle thigh
+                slit.
+              </p>
+              <div class="product-info">
+                <span class="colors">Olive Green, Charcoal</span>
+                <span class="price">$190</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Satin High-Neck Dress', 190)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 15 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1534126511673-b6899657816a?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Houndstooth A-Line Skirt Set"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Classic Houndstooth Set</h3>
+              <p class="card-desc">
+                Vintage-inspired two-piece cropped jacket and A-line skirt set.
+              </p>
+              <div class="product-info">
+                <span class="colors">Black / Off-White</span>
+                <span class="price">$225</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Classic Houndstooth Set', 225)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 16 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=800&q=80"
+                alt="Embroidered Organza Cocktail Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Embroidered Organza Dress</h3>
+              <p class="card-desc">
+                Delicate hand-embroidered floral motifs over sheer organza
+                lining.
+              </p>
+              <div class="product-info">
+                <span class="colors">Blush Pink, Cream</span>
+                <span class="price">$295</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Embroidered Organza Dress', 295)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 17 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                alt="Bohemian Tiered Maxi Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Bohemian Tiered Maxi Dress</h3>
+              <p class="card-desc">
+                Free-flowing tiered silhouette featuring soft elasticated
+                smocked cuffs.
+              </p>
+              <div class="product-info">
+                <span class="colors">Burnt Orange, Sage</span>
+                <span class="price">$145</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Bohemian Tiered Maxi Dress', 145)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 18 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
+                alt="Double-Breasted Blazer Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Double-Breasted Blazer Dress</h3>
+              <p class="card-desc">
+                Sharp, commanding power dressing silhouette with satin lapel
+                trims.
+              </p>
+              <div class="product-info">
+                <span class="colors">Jet Black, Navy</span>
+                <span class="price">$230</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Double-Breasted Blazer Dress', 230)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 19 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
+                alt="Plunging V-Neck Jacquard Dress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Plunging V-Neck Jacquard</h3>
+              <p class="card-desc">
+                Rich textured jacquard fabric pattern with delicate metallic
+                sheen thread.
+              </p>
+              <div class="product-info">
+                <span class="colors">Gold / Bronze, Navy</span>
+                <span class="price">$270</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Plunging V-Neck Jacquard', 270)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 20 -->
+          <div class="product-card">
+            <div class="card-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+                alt="Minimalist Linen Blend Shirtdress"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Linen Blend Shirtdress</h3>
+              <p class="card-desc">
+                Breezy organic linen-cotton blend shirtdress with tortoise shell
+                buttons.
+              </p>
+              <div class="product-info">
+                <span class="colors">Sand, Olive, White</span>
+                <span class="price">$110</span>
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Linen Blend Shirtdress', 110)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial section -->
+      <section class="testimonials" id="testimonials">
+        <div class="testimonials-header">
+          <h2>Client Testimonials</h2>
+          <p>See how our solutions have helped businesses scale and succeed.</p>
+        </div>
+
+        <div class="feedback">
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "Switching to this platform cut our deployment times in half.
+                The intuitive design and robust performance features have made
+                it an indispensable part of our daily workflow."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>Lina Vance</cite>
+              <span class="user-role">Lead Engineer, Vertex Tech</span>
+            </figcaption>
+          </figure>
+
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "The level of customer support and code reliability is
+                unmatched. We were able to migrate our legacy systems smoothly
+                without a single minute of unexpected downtime."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>Talia Monroe</cite>
+              <span class="user-role">Product Manager, Apex Solutions</span>
+            </figcaption>
+          </figure>
+
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "An absolute game-changer for our design team. The streamlined
+                component structure allowed us to launch our redesign two weeks
+                ahead of schedule."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>Anna Harper</cite>
+              <span class="user-role">Creative Director, Studio Nova</span>
+            </figcaption>
+          </figure>
+
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "Clean, efficient, and exceptionally well-documented. It scaled
+                effortlessly with our growing user base right from day one.
+                Highly recommended!"
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>Brianna Hertz</cite>
+              <span class="user-role">CTO, CloudScale Inc.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "The clean architecture and semantic markup improved our SEO
+                rankings within weeks. It's rare to find a codebase that
+                balances performance and elegance so well."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>John Payne</cite>
+              <span class="user-role">Founder, Pulse Digital</span>
+            </figcaption>
+          </figure>
+
+          <figure class="users-feedback">
+            <blockquote>
+              <p>
+                "From onboarding to production deployment, everything felt
+                seamless. Our engineering velocity has increased dramatically
+                since adopting this system."
+              </p>
+            </blockquote>
+            <figcaption>
+              <cite>Emelia Shinohara</cite>
+              <span class="user-role">Operations Lead, Vanguard Labs</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>  
+
+
+      <section class="email">
+          <div class="email-container">
+            <h3>Get In Touch</h3>
+            <p>Join the Areum circle,get new fashion ideas,get the latest updates and much more.</p>
+            <div class="form">
+                <p>Email Address</p>
+                <input type="text" name="Email Address" placeholder="Enter your email address">
+                <p>Password</p>
+                <input type="password" name="Password" placeholder="Enter your password">
+                <button class="submit-btn">Submit</button>
+            </div>
+          </div>
+
+      </section>  
+
+      <section class="contact" id="contact">
+        <div> 
+           <h3>Contact Us at</h3> 
+           <p>www.areumfashion.com</p>
+           <p>Or visit - 8, Seoul street, Seoul, South Korea</p>
+        </div>
+      </section>  
+
+      
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Brand / Keyword Section -->
+    <div class="footer-col brand-col">
+      <h3 class="footer-title">Areum Fashion</h3>
+      <p class="brand-keyword"><strong>Areum</strong> — <em>Beauty (아름)</em></p>
+      <p class="brand-desc">Defining elegance and contemporary fashion for everyday style.</p>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Collections Column -->
+    <div class="footer-col">
+      <h3 class="footer-title">Our Collections</h3>
+      <ul class="footer-links">
+        <li><a href="#jeans">Jeans</a></li>
+        <li><a href="#croptops">Crop Tops</a></li>
+        <li><a href="#joggers">Joggers</a></li>
+        <li><a href="#baggy-jeans">Baggy Jeans</a></li>
+        <li><a href="#gowns">Gowns</a></li>
+        <li><a href="#sundresses">Sundresses</a></li>
+        <li><a href="#nightgowns">Night Gowns</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 Areum Fashion. All rights reserved.</p>
+  </div>
+</footer>
+    </main>
+
+    <script>
+      let cartCount = 0;
+      function addToCart(name, price) {
+        cartCount++;
+        document.getElementById("cartCount").innerText = cartCount;
+
+        // Visual feedback on button click
+        const btn = event.target;
+        const originalText = btn.innerText;
+        btn.innerText = "Added!";
+        btn.style.backgroundColor = "#b08d57";
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.style.backgroundColor = "";
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
